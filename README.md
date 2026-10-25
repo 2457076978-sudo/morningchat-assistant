@@ -25,3 +25,7 @@ Also available as a zip from the companion site: http://1.14.103.115/plugin.html
 
 Built by Wayne, a junior-high English teacher, for daily listening drills.
 Audio on the companion site is AI-generated.
+
+## Defensive Publication
+
+The full technical disclosure of the progressive slow-replay mechanism is published as prior art: [docs/DEFENSIVE_PUBLICATION.md](docs/DEFENSIVE_PUBLICATION.md) (dated 2026-10-25).

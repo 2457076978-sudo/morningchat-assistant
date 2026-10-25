@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "盲听助手·多站版（自用试用）",
+  "version": "2.3.0",
+  "description": "单击递进降速 + 学习期内录：没听清点一下→0.8x→0.6x→循环；支持14+视频站、字幕分句、触发统计、整节录音与难点标记导出",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.bilibili.com/video/*",
+        "https://www.bilibili.com/bangumi/*",
+        "https://www.youtube.com/watch*",
+        "https://m.youtube.com/watch*",
+        "https://www.ted.com/talks/*",
+        "https://vimeo.com/*",
+        "https://www.bbc.co.uk/learningenglish/*",
+        "https://learnenglish.britishcouncil.org/*",
+        "https://open.163.com/*",
+        "https://www.icourse163.org/*",
+        "https://www.zhihu.com/*",
+        "https://weibo.com/*",
+        "https://www.weibo.com/*",
+        "https://www.douyin.com/*",
+        "https://www.ixigua.com/*",
+        "https://v.youku.com/*",
+        "https://v.qq.com/*",
+        "https://www.iqiyi.com/*"
+      ],
+      "js": ["main.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://www.bilibili.com/video/*",
+        "https://www.bilibili.com/bangumi/*",
+        "https://www.youtube.com/watch*",
+        "https://m.youtube.com/watch*",
+        "https://www.ted.com/talks/*",
+        "https://vimeo.com/*",
+        "https://www.bbc.co.uk/learningenglish/*",
+        "https://learnenglish.britishcouncil.org/*",
+        "https://open.163.com/*",
+        "https://www.icourse163.org/*",
+        "https://www.zhihu.com/*",
+        "https://weibo.com/*",
+        "https://www.weibo.com/*",
+        "https://www.douyin.com/*",
+        "https://www.ixigua.com/*",
+        "https://v.youku.com/*",
+        "https://v.qq.com/*",
+        "https://www.iqiyi.com/*"
+      ],
+      "js": ["lib/subtitle-merge.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
